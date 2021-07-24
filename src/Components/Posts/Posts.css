@@ -32,9 +32,7 @@
     position: relative;
     align-self: center;
 }
-.hide {
-    display: none;
-}
+
 @media screen and (max-width:500px) {
     .carousel-root{
         width:90vw;
