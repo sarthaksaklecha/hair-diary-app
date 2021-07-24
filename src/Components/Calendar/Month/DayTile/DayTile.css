@@ -1,0 +1,73 @@
+.tile {
+    width: calc(100%/7);
+    border: 1px  solid #dcdcdc;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: calc(100vh/5);
+}
+.post-section {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    z-index: -1;
+    top:-8%;
+}
+.post-section img {
+    width:100%;
+    height: calc(100vh/9);
+}
+.stars {
+    position: relative;
+    z-index: -1;
+}
+.codes {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.full-post-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0;
+    width : 100vw;
+    height: 100vh;
+    background-image: url("../../../../Assets/background-desktop.png");
+    background-size: cover;
+}
+
+.shrink {
+    height: 10px;
+}
+@media screen and (min-width:900px){
+    .tile {
+        height: calc(100vh/5);
+        padding: 0 10px 10px;
+    }
+    .post-section {
+        top:0px;
+    }
+    .post-section img {
+        width:50%;
+        height: calc(100vh/9);
+    }
+    .post-and-code {
+        display: flex;
+        justify-content: space-around;
+    }
+    .codes {
+        flex-flow: column wrap;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    .full-post-page {
+        background-image: url("../../../../Assets/background-mobile.png");
+    }
+}
